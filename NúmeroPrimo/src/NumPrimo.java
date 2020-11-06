@@ -7,11 +7,11 @@ public class NumPrimo {
 		System.out.print("Introduzca un número:");
 		int n = teclado.nextInt();		//ALMACENA NÚMERO EN N
 		
-		while (i<=n/2 && n%1!=0) {		//MIENTRAS LA I SEA MENOR O IGUAL A LA MITAD DE N
+		while (i<=n/2 && n%i!=0) {		//MIENTRAS LA I SEA MENOR O IGUAL A LA MITAD DE N
 			i++;		//SUMAR UNO A LA I
 		}
 		
-		if (i<=n/2) {		//SI LA I LLEGÓ AL FINAL DE LA SECUENCIA (LA MITAD DE N)
+		if (i>=n/2) {		//SI LA I LLEGÓ AL FINAL DE LA SECUENCIA (LA MITAD DE N)
 			System.out.print("El número es primo.");		//ES PRIMO
 			
 		} else {		//SI NO, UN NÚMERO MENOR A LA MITAD DE N ES MÚTLIPLO DE N
